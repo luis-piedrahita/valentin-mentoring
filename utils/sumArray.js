@@ -1,3 +1,14 @@
+/*
+** 4. Calculate the sum of numbers within an array
+** You can create your own array of numbers but consider trying this problem with a few different 
+** sets to verify your solution. Have one array with negative and positive numbers and another with 
+** integers and decimals.
+** You could also try using arrays of different lengths. If you're feeling comfortable with this, 
+** try the slightly more challenging bonus challenge below.
+** Bonus intermediate challenge: Create a function that can return the sum of a particular column 
+** or row number in a table.
+*/
+
 /**
  * Returns the sum of all numbers in array
  * @param {number[]} numbers - An array with number
@@ -21,10 +32,10 @@ export function sumRowOrColumn(table, row, col = 0) {
 
   // Check that user specifies a row or a column, not both or neither
   if ((!row && !col) || (row && col))
-    throw new Error('You must specify only a row or a col to sum');
+    throw new Error("You must specify only a row or a col to sum");
   // Check that table is correct -> all rows have the same length
   if (table.some((row) => row.length !== maxCol))
-    throw new Error('Table rows must have the same length');
+    throw new Error("Table rows must have the same length");
   // Check that specified row or column number is smaller than length of the table
   if (row > maxRow || col > maxCol)
     throw new Error(
