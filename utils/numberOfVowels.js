@@ -20,3 +20,5 @@ export function numberOfVowelsPro(str) {
   }
   return result;
 }
+
+console.log(numberOfVowels("gsfgguiervnbds mnfvdsweraaoi"));

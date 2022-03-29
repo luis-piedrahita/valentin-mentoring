@@ -1,13 +1,13 @@
 /*
-** 4. Calculate the sum of numbers within an array
-** You can create your own array of numbers but consider trying this problem with a few different 
-** sets to verify your solution. Have one array with negative and positive numbers and another with 
-** integers and decimals.
-** You could also try using arrays of different lengths. If you're feeling comfortable with this, 
-** try the slightly more challenging bonus challenge below.
-** Bonus intermediate challenge: Create a function that can return the sum of a particular column 
-** or row number in a table.
-*/
+ ** 4. Calculate the sum of numbers within an array
+ ** You can create your own array of numbers but consider trying this problem with a few different
+ ** sets to verify your solution. Have one array with negative and positive numbers and another with
+ ** integers and decimals.
+ ** You could also try using arrays of different lengths. If you're feeling comfortable with this,
+ ** try the slightly more challenging bonus challenge below.
+ ** Bonus intermediate challenge: Create a function that can return the sum of a particular column
+ ** or row number in a table.
+ */
 
 /**
  * Returns the sum of all numbers in array
@@ -48,3 +48,13 @@ export function sumRowOrColumn(table, row, col = 0) {
   const column = table.map((rowArray) => rowArray[col - 1]);
   return sumNumbersArray(column);
 }
+
+// TODO try y catch con errorcito lindo
+const tab = [
+  [1, 2, 3, 4, 5, 6, 7, -8, 9, 10],
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  [1, 2, 3, 4, 5, -6, 7, 8, 9, 10],
+  [1, 2, -3, 4, 5, 6, 7, 8, 9, 10],
+  [1, 2, 3, -4, 5, 6, 7, 8, 9, 10],
+];
+console.log(sumRowOrColumn(tab, 0, 8));

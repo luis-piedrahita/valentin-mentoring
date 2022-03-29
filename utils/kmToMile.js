@@ -13,3 +13,10 @@ export function kmToMile(km) {
 }
 
 console.log(kmToMile(30));
+
+
+// kmToMile ConverteDistance(unity, value)
+// if (unity === 'miles') {
+//   return value * 0.621371;
+// }
+// return value * 0.621371;

@@ -6,6 +6,8 @@
  ** or even up to 10,000 with little extra effort.
  */
 
+array.reduce((i) => i + 2, 0);
+
 export function printEvenNumbers(num) {
   for (let i = 0; i <= num; i += 2) {
     console.log(i);
